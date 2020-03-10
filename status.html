@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>CP Taskboard Chrome Extension</title>
+        <!-- 新 Bootstrap4 核心 CSS 文件 -->
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="util.js"></script>
+        <script src="jquery.js"></script>
+    </head>
+    <body style="min-width: 30em">
+        <p id="msg">Status Information</p>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="general.html">General</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="problem.html">Problem</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="status.html">Status</a>
+            </li>
+        </ul>
+
+        Parse Status: <i id="parse">Parsing</i> <br/>
+
+        AC Status: <b id="ac">Loading...</b>  <br/>
+        <div class="form-group">
+            <label for="tags">Tags</label>
+            <input type="text" class="form-control" id="tags" placeholder="Use comma to separate tags" >
+        </div>
+
+        <div class="form-group">
+            <label for="note">Note</label>
+            <input type="text" class="form-control" id="note" placeholder="Make some notes... You may use HTML.">
+        </div>
+
+        <button id="reload" class="btn btn-primary">Reload Data</button>
+        <button id="setac" class="btn btn-success">Toggle Accepted</button>
+        <button id="update" class="btn btn-primary">Write Diary</button>
+    </body>
+    
+    <script src="status.js"></script>
+</html>

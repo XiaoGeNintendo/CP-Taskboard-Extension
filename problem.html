@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>CP Taskboard Chrome Extension</title>
+        <!-- 新 Bootstrap4 核心 CSS 文件 -->
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="util.js"></script>
+    </head>
+    <body style="min-width: 30em">
+        <p id="msg">Problem Information</p>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="general.html">General</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="problem.html">Problem</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="status.html">Status</a>
+            </li>
+        </ul>
+
+        Problem Universal ID: <i id="uid">Loading...</i> <br/>
+        Problem Guessed OJ: <i id="oj">Loading...</i> <br/>
+        Problem Guessed Title: <i id="title">Loading...</i> <br/>
+        
+        <button id="reload" class="btn btn-primary">Reload Data</button>
+    </body>
+    
+    <script src="problem.js"></script>
+</html>

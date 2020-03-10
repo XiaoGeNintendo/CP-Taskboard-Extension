@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>CP Taskboard Chrome Extension</title>
+        <!-- 新 Bootstrap4 核心 CSS 文件 -->
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="util.js"></script>
+        <script src="jquery.js"></script>
+    </head>
+    <body style="min-width: 30em">
+        <p id="msg">General Information</p>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="general.html">General</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="problem.html">Problem</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="status.html">Status</a>
+            </li>
+        </ul>
+
+        <div class="form-group">
+            <label for="usr">Username</label>
+                <input type="text" class="form-control" id="usr" value="Loading">
+        </div>
+
+        <div class="form-group">
+            <label for="pwd">Password</label>
+            <input type="password" class="form-control" id="pwd" value="You can't see me">
+        </div>
+
+        <div class="form-group">
+                <label for="host">Host</label>
+                <input type="text" class="form-control" id="host" value="Loading">
+        </div>
+
+        OJ Parser Version: <i id="ver">Loading...</i> <br/>
+
+        <button id="button" class="btn btn-primary">Set General Information</button>
+        <button id="update" class="btn btn-primary">Update OJ Parser</button>
+    </body>
+    
+    <script src="general.js"></script>
+</html>
